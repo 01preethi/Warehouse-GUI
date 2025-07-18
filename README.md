@@ -48,27 +48,25 @@ The following libraries are located in the `lib/` folder:
 You need to set up a **MySQL database** and create the required tables.
 
 ###  Step 1: Create the Database
-```sql
-CREATE DATABASE warehouse;
-USE warehouse;
 
- Step 2: Create Tables 
+CREATE DATABASE Database_name;
+USE Database_name;
 
-CREATE DATABASE warehouse;
-USE warehouse;
 
-CREATE TABLE products(
+**Step 2: Create Tables**
+
+CREATE TABLE Table_name(
    id INT PRIMARY KEY,
    name VARCHAR(100),
    quantity INT,
    qr_code VARCHAR(200),
    created_at DATETIME
 );
-select*from products;
+select*from Table;
 
 ✅ Feel free to expand or modify tables based on your application features.
 
- Step 3: JDBC Connection Setup in Code
+ **Step 3: JDBC Connection Setup in Code**
 
 String url = "jdbc:mysql://localhost:3306/warehouse";
 String user = "your_mysql_username";
@@ -76,12 +74,12 @@ String password = "your_mysql_password";
 
 Connection conn = DriverManager.getConnection(url, user, password);
 
-🧾 Notes
-Recommended Java version: 8 or higher
+**Notes**
+1.Recommended Java version: 8 or higher
 
-Make sure MySQL service is running when launching the application
+2.Make sure MySQL service is running when launching the application
 
-Add the .jar files from lib/ to the classpath before compiling or running
+3.Add the .jar files from lib/ to the classpath before compiling or running
 
-Ensure correct JDBC URL, username, and password in your code
+4.Ensure correct JDBC URL, username, and password in your code
 

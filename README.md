@@ -1,8 +1,7 @@
 # WarehouseORSystem
 
 A Java-based application for managing warehouse operations. 
-This project uses **Java Swing** for the graphical user interface and connects to a **MySQL database** for backend storage. It also supports PDF generation for reports using
-the iText library.
+This project uses **Java Swing** for the graphical user interface and connects to a **MySQL database** for backend storage.
 
 ---
 

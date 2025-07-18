@@ -9,13 +9,13 @@ public class DBConnect {
             
             String url = "jdbc:mysql://localhost:3306/warehouse"; 
             String user = "root";
-            String password = "0105";
+            String password = "****";
 
             Connection conn = DriverManager.getConnection(url, user, password);
             System.out.println("Database connected successfully!");
             return conn;
         } catch (Exception e) {
-            System.out.println("❌ Database connection failed!");
+            System.out.println(" Database connection failed!");
             e.printStackTrace();
             return null;
         }
